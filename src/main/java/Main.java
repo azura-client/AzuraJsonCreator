@@ -14,7 +14,7 @@ public class Main {
 
     static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    private static String[] dependencyUrls = new String[] {
+    private static final String[] dependencyUrls = new String[] {
             "https://cdn.azura.best/download/library/azura/eventbus/1.2.0/azura-event-bus-1.2.0.jar",
             "https://cdn.azura.best/download/library/viaversion/1.30/ViaSnakeYaml-1.30.jar",
             "https://cdn.azura.best/download/library/viaversion/2.0.3/ViaRewind-2.0.3-SNAPSHOT.jar",
@@ -32,7 +32,7 @@ public class Main {
             "https://cdn.azura.best/download/library/slf4j/simple/1.7.36/slf4j-simple-1.7.36.jar",
     };
 
-    private static ArrayList<JsonObject> jsonObjectArrayList = new ArrayList<>();
+    private static final ArrayList<JsonObject> jsonObjectArrayList = new ArrayList<>();
 
     public static void main(String[] args) {
         try {
@@ -48,16 +48,17 @@ public class Main {
                 String version = splits[splits.length - 2];
 
                 InputStream in = new URL(url).openStream();
-                Files.copy(in, Paths.get("libs/", fileName), StandardCopyOption.REPLACE_EXISTING);
+                Path libsPath = Path.of("libs/", fileName);
+                Files.copy(in, libsPath, StandardCopyOption.REPLACE_EXISTING);
                 File actualFile = new File("libs/", fileName);
 
                 System.out.println("Downloaded " + fileName);
 
-                String sha1 = createSha1(actualFile);
+                String sha1 = createSha1(actualFile).toLowerCase();
 
                 System.out.println("Created SHA-1 Hash " + sha1);
 
-                long size = Files.size(Paths.get("libs/", fileName));
+                long size = Files.size(libsPath);
 
                 System.out.println("Received size " + size);
 
@@ -67,8 +68,12 @@ public class Main {
                 artifact.addProperty("size", size);
                 artifact.addProperty("url", url);
 
+                JsonObject downloads = new JsonObject();
+
+                downloads.add("artifact", artifact);
+
                 jsonObject.addProperty("name", "best.azura:" + name + ":" + version);
-                jsonObject.add("artifact", artifact);
+                jsonObject.add("downloads", downloads);
 
                 System.out.println("Created JsonObject " + fileName);
                 jsonObjectArrayList.add(jsonObject);
@@ -90,7 +95,6 @@ public class Main {
                         System.out.println("Adding Library to JsonArray.");
                         jsonArray.add(libs);
                     }
-                    jsonObject.remove("libraries");
                     jsonObject.add("libraries", jsonArray);
                     System.out.println("Printing.");
                     try (PrintWriter printWriter = new PrintWriter("out.json")) {
