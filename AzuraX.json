@@ -561,7 +561,7 @@
       ]
     },
     {
-      "name": "best.azura:azura-event-bus-1.2.0:1.2.0",
+      "name": "best.azura:azura-event-bus:1.2.0",
       "downloads": {
         "artifact": {
           "path": "azura/azura-event-bus-1.2.0.jar",
@@ -572,7 +572,7 @@
       }
     },
     {
-      "name": "best.azura:ViaSnakeYaml-1.30:1.30",
+      "name": "best.azura:ViaSnakeYaml:1.30",
       "downloads": {
         "artifact": {
           "path": "azura/ViaSnakeYaml-1.30.jar",
@@ -583,7 +583,7 @@
       }
     },
     {
-      "name": "best.azura:ViaRewind-2.0.3-SNAPSHOT:2.0.3",
+      "name": "best.azura:ViaRewind:2.0.3",
       "downloads": {
         "artifact": {
           "path": "azura/ViaRewind-2.0.3-SNAPSHOT.jar",
@@ -594,7 +594,7 @@
       }
     },
     {
-      "name": "best.azura:ViaVersion-4.3.2-SNAPSHOT:4.3.2",
+      "name": "best.azura:ViaVersion:4.3.2",
       "downloads": {
         "artifact": {
           "path": "azura/ViaVersion-4.3.2-SNAPSHOT.jar",
@@ -605,7 +605,7 @@
       }
     },
     {
-      "name": "best.azura:ViaBackwards-4.3.1-SNAPSHOT:4.3.1",
+      "name": "best.azura:ViaBackwards:4.3.1",
       "downloads": {
         "artifact": {
           "path": "azura/ViaBackwards-4.3.1-SNAPSHOT.jar",
@@ -616,7 +616,7 @@
       }
     },
     {
-      "name": "best.azura:KingGen-1.4.2:1.4.2",
+      "name": "best.azura:KingGen:1.4.2",
       "downloads": {
         "artifact": {
           "path": "azura/KingGen-1.4.2.jar",
@@ -638,7 +638,7 @@
       }
     },
     {
-      "name": "best.azura:openauth-1.1.3:1.1.3",
+      "name": "best.azura:openauth:1.1.3",
       "downloads": {
         "artifact": {
           "path": "azura/openauth-1.1.3.jar",
@@ -649,7 +649,7 @@
       }
     },
     {
-      "name": "best.azura:jna-5.10.0:5.10.0",
+      "name": "best.azura:jna:5.10.0",
       "downloads": {
         "artifact": {
           "path": "azura/jna-5.10.0.jar",
@@ -660,7 +660,7 @@
       }
     },
     {
-      "name": "best.azura:jna-platform-5.10.0:5.10.0",
+      "name": "best.azura:jna-platform:5.10.0",
       "downloads": {
         "artifact": {
           "path": "azura/jna-platform-5.10.0.jar",
@@ -671,7 +671,7 @@
       }
     },
     {
-      "name": "best.azura:log4j-api-2.17.0:2.17.0",
+      "name": "best.azura:log4j-api:2.17.0",
       "downloads": {
         "artifact": {
           "path": "azura/log4j-api-2.17.0.jar",
@@ -682,7 +682,7 @@
       }
     },
     {
-      "name": "best.azura:log4j-core-2.17.0:2.17.0",
+      "name": "best.azura:log4j-core:2.17.0",
       "downloads": {
         "artifact": {
           "path": "azura/log4j-core-2.17.0.jar",
@@ -693,7 +693,7 @@
       }
     },
     {
-      "name": "best.azura:oshi-core-6.1.3:6.1.3",
+      "name": "best.azura:oshi-core:6.1.3",
       "downloads": {
         "artifact": {
           "path": "azura/oshi-core-6.1.3.jar",
@@ -704,7 +704,7 @@
       }
     },
     {
-      "name": "best.azura:slf4j-api-1.7.36:1.7.36",
+      "name": "best.azura:slf4j-api:1.7.36",
       "downloads": {
         "artifact": {
           "path": "azura/slf4j-api-1.7.36.jar",
@@ -715,7 +715,7 @@
       }
     },
     {
-      "name": "best.azura:slf4j-simple-1.7.36:1.7.36",
+      "name": "best.azura:slf4j-simple:1.7.36",
       "downloads": {
         "artifact": {
           "path": "azura/slf4j-simple-1.7.36.jar",

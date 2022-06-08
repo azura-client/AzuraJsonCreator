@@ -44,8 +44,12 @@ public class Main {
                 JsonObject jsonObject = new JsonObject();
                 String[] splits = url.split("/");
                 String fileName = splits[splits.length - 1];
-                String name = fileName.replace(".jar", "");
                 String version = splits[splits.length - 2];
+                String name = fileName
+                        .replace(".jar", "")
+                        .replace("-" + version, "")
+                        .replace("-SNAPSHOT", "")
+                        .replace("-RELEASE", "");
 
                 InputStream in = new URL(url).openStream();
                 Path libsPath = Path.of("libs/", fileName);
