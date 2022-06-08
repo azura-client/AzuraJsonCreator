@@ -22,7 +22,7 @@ public class Main {
             "https://cdn.azura.best/download/library/viaversion/4.3.1/ViaBackwards-4.3.1-SNAPSHOT.jar",
             "https://cdn.azura.best/download/library/kingalts/kinggen/1.4.2/KingGen-1.4.2.jar",
             "https://cdn.azura.best/download/library/discordrpc/1.0.0/discord-rpc.jar",
-            "https://cdn.azura.best/download/library/openauth/1.1.2/openauth-1.1.2.jar",
+            "https://cdn.azura.best/download/library/azura/openauth/1.1.3/openauth-1.1.3.jar",
             "https://cdn.azura.best/download/library/jna/5.10.0/jna-5.10.0.jar",
             "https://cdn.azura.best/download/library/jna/5.10.0/jna-platform-5.10.0.jar",
             "https://cdn.azura.best/download/library/log4j/api/2.17.0/log4j-api-2.17.0.jar",
