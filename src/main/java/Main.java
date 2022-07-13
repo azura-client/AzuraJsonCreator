@@ -15,14 +15,14 @@ public class Main {
     static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     private static final String[] dependencyUrls = new String[] {
-            "https://cdn.azura.best/download/library/azura/eventbus/1.2.0/azura-event-bus-1.2.0.jar",
+            "https://cdn.azura.best/download/library/azura/eventbus/1.2.1/azura-event-bus-1.2.1.jar",
             "https://cdn.azura.best/download/library/viaversion/1.30/ViaSnakeYaml-1.30.jar",
             "https://cdn.azura.best/download/library/viaversion/2.0.3/ViaRewind-2.0.3-SNAPSHOT.jar",
             "https://cdn.azura.best/download/library/viaversion/4.3.2/ViaVersion-4.3.2-SNAPSHOT.jar",
             "https://cdn.azura.best/download/library/viaversion/4.3.1/ViaBackwards-4.3.1-SNAPSHOT.jar",
             "https://cdn.azura.best/download/library/kingalts/kinggen/1.4.2/KingGen-1.4.2.jar",
             "https://cdn.azura.best/download/library/discordrpc/1.0.0/discord-rpc.jar",
-            "https://cdn.azura.best/download/library/azura/openauth/1.1.3/openauth-1.1.3.jar",
+            "https://cdn.azura.best/download/library/azura/openauth/1.1.4/openauth-1.1.4.jar",
             "https://cdn.azura.best/download/library/jna/5.10.0/jna-5.10.0.jar",
             "https://cdn.azura.best/download/library/jna/5.10.0/jna-platform-5.10.0.jar",
             "https://cdn.azura.best/download/library/log4j/api/2.17.0/log4j-api-2.17.0.jar",
@@ -101,11 +101,11 @@ public class Main {
                     }
                     jsonObject.add("libraries", jsonArray);
                     System.out.println("Printing.");
-                    try (PrintWriter printWriter = new PrintWriter("out.json")) {
+                    try (PrintWriter printWriter = new PrintWriter("AzuraX.json")) {
                         printWriter.println(gson.toJson(jsonObject));
                         System.out.println("Finished.");
                     } catch (Exception exception) {
-                        System.out.println("Couldn't write into out.json!\nException: " + exception.getMessage());
+                        System.out.println("Couldn't write into AzuraX.json!\nException: " + exception.getMessage());
                     }
                 } else {
                     System.out.println("Got an Invalid JSON.");
